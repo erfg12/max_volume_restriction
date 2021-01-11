@@ -24,6 +24,7 @@ namespace ConsoleApp1
             {
                 if (mmDevice.AudioEndpointVolume.MasterVolumeLevelScalar > maxVolume) //if volume above 10%...
                     mmDevice.AudioEndpointVolume.MasterVolumeLevelScalar = maxVolume; //set to 10%.
+                System.Threading.Thread.Sleep(10);
             }
         }
     }
